@@ -78,6 +78,18 @@ a {
     margin-bottom: 14px;
 }
 
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: brown;
+}
+
+a:hover {
+    color: brown;
+}
+
 .address {
     margin-bottom: 5px;
 }
