@@ -1,0 +1,67 @@
+body {
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+    padding: 2rem 0;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    width: 100%;
+    min-height: 2em;
+    margin: 10px 0 0 0;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: white;
+}
+
+.inline, input[type="checkbox"] {
+    width: unset;
+    display: inline;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+
+input[type="submit"] {
+    width: 60%;
+    display: block;
+    margin: 1em auto;
+    font-size: 1.1em;
+    height: 2em;
+    min-width: 300px;
+    border: 1px solid white;
+    background-color: #3b3b4f;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
