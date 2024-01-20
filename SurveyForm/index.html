@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Pokémon Trainer Survey Form</h1>
+            <p id="description">Thank you for taking the time to sharing your Pokémon experience</p>
+        </header>
+    
+        <main>
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Trainer Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age <span>(optional)</span></label>
+                    <input type="number" id="number" name="age" min="13" max="120" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <p>How long have you play Pokémon games?</p>
+                    <select name="role" id="dropdown" required>
+                        <option value="none">Select an option</option>
+                        <option value="under-a-year">Under a year</option>
+                        <option value="one-to-three">1 - 3 years</option>
+                        <option value="over-three">Over 3 years</option>
+                        <option value="prefer-no">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend Pokémon to a friend?</p>
+                    <label>
+                        <input type="radio" name="recommend" value="definitely" checked> Definitely
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" value="maybe"> Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" value="not-sure"> Not sure
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>What's your favorite features of Pokémon?</p>
+                    <select name="favorite-feature" id="favorite-feature" required>
+                        <option value="diversity">Pokémon Diversity</option>
+                        <option value="bond">Bond with Pokémon</option>
+                        <option value="gameplay">Strategic Gameplay</option>
+                        <option value="exploration">Exploration and Adventure</option>
+                        <option value="evolution">Evolution and Growth</option>
+                        <option value="legendary">Legendary Pokémon</option>
+                        <option value="community-aspect">Community and Social Aspect</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What's your favorite Pokémon games? <span>(Check all that apply)</span></p>
+                    <label>
+                        <input type="checkbox" value="red-blue" name="game"> Red / Blue
+                    </label>
+                    <label>
+                        <input type="checkbox" value="yellow" name="game"> Yellow
+                    </label>
+                    <label>
+                        <input type="checkbox" value="gold-silver" name="game"> Gold / Silver
+                    </label>
+                    <label>
+                        <input type="checkbox" value="crystal" name="game"> Crystal
+                    </label>
+                    <label>
+                        <input type="checkbox" value="ruby-sapphire" name="game"> Ruby / Sapphire
+                    </label>
+                    <label>
+                        <input type="checkbox" value="emerald" name="game"> Emerald
+                    </label>
+                    <label>
+                        <input type="checkbox" value="firered-leafgreen" name="game"> Fire Red / Leaf Green
+                    </label>
+                    <label>
+                        <input type="checkbox" value="diamond-pearl" name="game"> Diamond / Pearl
+                    </label>
+                    <label>
+                        <input type="checkbox" value="platinum" name="game"> Platinum
+                    </label>
+                    <label>
+                        <input type="checkbox" value="black-white" name="game"> Black / White
+                    </label>
+                    <label>
+                        <input type="checkbox" value="black2-white2" name="game"> Black 2 / White 2
+                    </label>
+                    <label>
+                        <input type="checkbox" value="x-y" name="game"> X / Y
+                    </label>
+                    <label>
+                        <input type="checkbox" value="omegaruby-alphasapphire" name="game"> Omega Ruby / Alpha Sapphire
+                    </label>
+                    <label>
+                        <input type="checkbox" value="sun-moon" name="game"> Sun / Moon
+                    </label>
+                    <label>
+                        <input type="checkbox" value="ultrasun-ultramoon" name="game"> Ultra Sun / Ultra Moon
+                    </label>
+                    <label>
+                        <input type="checkbox" value="letsgopikachu-letsgoeevee" name="game"> Let's Go Pikachu / Let's Go Eevee
+                    </label>
+                    <label>
+                        <input type="checkbox" value="sword-shield" name="game"> Sword / Shield
+                    </label>
+                    <label>
+                        <input type="checkbox" value="brilliantdiamond-shinningpearl" name="game"> Brilliant Diamond / Shinning Pearl
+                    </label>
+                    <label>
+                        <input type="checkbox" value="legendsarceus" name="game"> Legends: Arceus
+                    </label>
+                    <label>
+                        <input type="checkbox" value="scarlet-violet" name="game"> Scarlet / Violet
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Do you have any ideas or suggestions to improve the Pokémon experience?</p>
+                    <textarea name="comment" id="comment" cols="30" rows="6" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
